@@ -8,9 +8,7 @@
 import UIKit
 
 class ProductsListViewController: UIViewController {
-    
-    //private var products: [Product] = []
-    //private var productsRepository: ProductsRepository
+     
     private var cellDataSource: [ProductTableCellViewModel] = []
     
     private var viewModel: ProductsListViewModel
@@ -32,6 +30,7 @@ class ProductsListViewController: UIViewController {
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         return activityIndicatorView
     }()
+    
     
     private var tableView: UITableView = {
         let tableView = UITableView()
